@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () =>{
     return(
-        <div className='header'>
+        <div className='header container'>
             <div>
                 <ul className='page-links'>
                     <li>Home</li>
