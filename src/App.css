@@ -121,8 +121,13 @@ li:hover{
   gap:  1.5em;
 }
 
-.homePagePreview > div > div > img{
+.homePagePreview > div > div >  img{
   height: 20em;
   width: 15em;
   object-fit: cover;
+}
+
+.link-products > p{
+  margin-top: .5em;
+  color: black;
 }

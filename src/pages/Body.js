@@ -8,7 +8,7 @@ const Body = () =>{
             <div className="container">
                 <h1>React</h1>
                 <p>NEVER ENDING IMPROVEMENT</p>
-                <Link className="Link" to={'/Contact'}> <p>Shop All</p></Link>
+                <Link className="Link" to={'/allProducts'}> <p>Shop All</p></Link>
             </div>
         </div>
     )
