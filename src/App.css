@@ -2,13 +2,19 @@
   padding: 0;
   margin: 0;
 }
+
 .App{
   
 }
 
 .container{
   width: 85%;
+  max-width: 1110px;
   margin: 0 auto;
+}
+.border-top{
+  border-top: 1px solid lightgray;
+  padding-top: 2em;
 }
 
 .App-logo {
@@ -130,4 +136,46 @@ li:hover{
 .link-products > p{
   margin-top: .5em;
   color: black;
+}
+.viewOne{
+  display: flex;
+  gap: 1.5em;
+}
+.viewOne > img{
+  width: 50%;
+  object-fit: cover;
+  flex-grow: 2;
+}
+
+.viewOne > div > button{
+  background-color: white;
+  padding: .5em;
+  border-radius: 40%;
+}
+
+.increment{
+  border: 1px solid black;
+  max-width: 150px;
+  display: flex;
+  padding: 1em;
+
+}
+
+.increment > button{
+  border: none;
+  background-color: white;
+
+}
+.increment > button:hover{
+  cursor: pointer;
+}
+
+.increment > input[type="number"]{
+  text-align: center;
+  border: none;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    display: none;
 }

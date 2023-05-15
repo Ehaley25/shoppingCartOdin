@@ -7,7 +7,7 @@ import {BrowserRouter , Route, Routes, useParams} from 'react-router-dom'
 import Welcome from './components/Welcome';
 import PreviewItems from './components/PreviewItems';
 import Catalog from './pages/Catalog';
-import Product from './components/Product';
+import ViewOneProduct from './components/ViewOneProduct';
 import AllProducts from './pages/AllProducts'
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/catalog' element={<Catalog/>} />
           <Route path='/allProducts' element={<AllProducts />} />
-          <Route path='/product/:id' element={<Product />} />
+          <Route path='/product/:id' element={<ViewOneProduct />} />
         </Routes>
       </BrowserRouter> 
     </div>
