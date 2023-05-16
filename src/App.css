@@ -125,6 +125,7 @@ li:hover{
 .homePagePreview > div {
   display: flex;
   gap:  1.5em;
+  width: 100vw;
 }
 
 .homePagePreview > div > div >  img{
@@ -178,4 +179,8 @@ li:hover{
 input[type='number']::-webkit-inner-spin-button, 
 input[type='number']::-webkit-outer-spin-button { 
     display: none;
+}
+
+.buy{
+
 }
