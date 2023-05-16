@@ -124,19 +124,20 @@ li:hover{
 
 .homePagePreview > div {
   display: flex;
-  gap:  1.5em;
-  width: 100vw;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .homePagePreview > div > div >  img{
-  height: 20em;
-  width: 15em;
+  height: 15em;
+  width: 10em;
   object-fit: cover;
 }
 
 .link-products > p{
   margin-top: .5em;
   color: black;
+  width: 10rem;
 }
 .viewOne{
   display: flex;

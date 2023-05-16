@@ -29,7 +29,7 @@ const Increment = () =>{
                 <input value={quantity} type='number'></input>
                 <button type="button" onClick={add}>+</button>
             </div>
-            <button>Buy It Now</button>
+            <button>Add to Cart</button>
         </form>
     )
 }
