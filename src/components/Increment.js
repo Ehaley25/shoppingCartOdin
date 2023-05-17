@@ -1,9 +1,9 @@
 import {React , useState , useContext} from "react";
 import { MyContext } from "../context/MyContext";
 
-const Increment = () =>{
+const Increment = (props) =>{
     const [quantity , setQuantity] = useState(0)
-    const {cartAmount , setCartAmount} = useContext(MyContext)
+    const {cart , setCart , data , setData} = useContext(MyContext)
     function add(){
         setQuantity(quantity+1)
     }
@@ -15,9 +15,7 @@ const Increment = () =>{
 
     function submitOrder(e){
         e.preventDefault()
-        setCartAmount(prev =>{
-            return(prev + quantity)
-        })
+        console.log(props.title)
     }
 
 

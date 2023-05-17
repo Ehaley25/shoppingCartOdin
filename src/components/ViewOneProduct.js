@@ -19,7 +19,11 @@ const Product = () =>{
                     <button>Small</button>
                     <button>Medium</button>
                     <button>Large</button>
-                    <Increment/>
+                    <Increment 
+                        title={clothing.title}
+                        price={clothing.price} 
+                        img={clothing.img} 
+                    />
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ import Context from '../context/Context'
 import { MyContext } from '../context/MyContext'
 const Header = () =>{
 
-    const {cartAmount , setCartAmount} = useContext(MyContext)
+    const {cart , setCart} = useContext(MyContext)
     
     
     return(
@@ -17,7 +17,7 @@ const Header = () =>{
                     </ul>
                 </div>
                 <div className='icons'>
-                    <h1>{cartAmount}</h1>
+                    <h1>{cart.length}</h1>
                     <h1>Test</h1>
                 </div>
             </div>
