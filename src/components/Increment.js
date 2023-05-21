@@ -31,7 +31,7 @@ const Increment = (props) =>{
             <p>Quantity</p>
             <div className="increment">
                 <button type="button" onClick={subtract}>-</button>
-                <input value={quantity} type='number'></input>
+                <input onChange={() => setQuantity(quantity)} value={quantity} type='number'></input>
                 <button type="button" onClick={add}>+</button>
             </div>
             <button>Add to Cart</button>

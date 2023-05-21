@@ -9,7 +9,7 @@ const Product = () =>{
 
     return(
         <div className="border-top">
-            <div className="container viewOne" >
+            <div className="container viewOne " >
                 <img src={clothing.img} alt={`${clothing.title}`}/>
                 <div>
                     <p>React</p>

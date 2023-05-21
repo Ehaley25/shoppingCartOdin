@@ -18,8 +18,10 @@ const Header = () =>{
                 </div>
                 <div className='icons'>
                     <div>
-                        <i class="fa" style={{fontSize:'24px'}}>&#xf07a;</i>
-                        <span class='badge badge-warning' id='lblCartCount'> {cart.length} </span>
+                        <Link to={'/cart'}><i className="fa" style={{fontSize:'24px'}}>&#xf07a;</i></Link>
+                        {
+                            cart.length ? <span className='badge badge-warning' id='lblCartCount'> {cart.length} </span> : null
+                        }
                     </div>
                     <h1>Test</h1>
                 </div>

@@ -189,7 +189,12 @@ li:hover{
 .increment > button{
   border: none;
   background-color: white;
-
+}
+.fa{
+  color: black;
+}
+.fa:visited{
+  color: black;
 }
 .increment > button:hover{
   cursor: pointer;
