@@ -17,7 +17,10 @@ const Header = () =>{
                     </ul>
                 </div>
                 <div className='icons'>
-                    <h1>{cart.length}</h1>
+                    <div>
+                        <i class="fa" style={{fontSize:'24px'}}>&#xf07a;</i>
+                        <span class='badge badge-warning' id='lblCartCount'> {cart.length} </span>
+                    </div>
                     <h1>Test</h1>
                 </div>
             </div>

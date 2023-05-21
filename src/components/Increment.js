@@ -1,4 +1,4 @@
-import {React , useState , useContext} from "react";
+import {React , useState , useContext, useEffect} from "react";
 import { MyContext } from "../context/MyContext";
 
 const Increment = (props) =>{
@@ -14,9 +14,16 @@ const Increment = (props) =>{
     }
 
     function submitOrder(e){
+        let arr = [...cart]
         e.preventDefault()
-        console.log(props.title)
+        console.log(cart)
+        arr.push({ _id:cart.length + 1 ,title:props.title , price:props.price , img: props.img })
+        setCart(arr)
     }
+
+    useEffect(() =>{
+        console.log(cart)
+    },[cart])
 
 
     return(
