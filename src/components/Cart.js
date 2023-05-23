@@ -1,4 +1,4 @@
-import {React, useContext, useEffect} from "react";
+import {React, useContext } from "react";
 import { MyContext } from '../context/MyContext'
 
 
@@ -7,13 +7,10 @@ const Cart = () =>{
     const {cart , setCart} = useContext(MyContext)
 
     function removeItem(id){
-        let newCart = cart.filter(item => item._id != id)
+        let newCart = cart.filter(item => item._id !== id)
         setCart(newCart)
     }
 
-    useEffect(() =>{
-        console.log(cart + 'cart stuff')
-    }, [cart])
 
     function cartItems(){
         return(

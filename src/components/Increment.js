@@ -1,9 +1,9 @@
-import {React , useState , useContext, useEffect} from "react";
+import {React , useState , useContext} from "react";
 import { MyContext } from "../context/MyContext";
 
 const Increment = (props) =>{
     const [quantity , setQuantity] = useState(0)
-    const {cart , setCart , data , setData} = useContext(MyContext)
+    const {cart , setCart } = useContext(MyContext)
     function add(){
         setQuantity(quantity+1)
     }
@@ -21,9 +21,6 @@ const Increment = (props) =>{
         setCart(arr)
     }
 
-    useEffect(() =>{
-        console.log(cart)
-    },[cart])
 
 
     return(

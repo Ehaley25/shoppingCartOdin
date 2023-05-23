@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header";
 import HomePage from './pages/HomePage';
 import Contact from './pages/Contact';
-import {BrowserRouter , Route, Routes, useParams} from 'react-router-dom'
+import {BrowserRouter , Route, Routes} from 'react-router-dom'
 import Welcome from './components/Welcome';
-import PreviewItems from './components/PreviewItems';
+// import PreviewItems from './components/PreviewItems';
 import Catalog from './pages/Catalog';
 import ViewOneProduct from './components/ViewOneProduct';
 import AllProducts from './pages/AllProducts'

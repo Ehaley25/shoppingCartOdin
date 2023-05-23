@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import {Link} from 'react-router-dom'
-import Context from '../context/Context'
+// import Context from '../context/Context'
 import { MyContext } from '../context/MyContext'
 const Header = () =>{
 
-    const {cart , setCart} = useContext(MyContext)
+    const {cart } = useContext(MyContext)
     
     
     return(
